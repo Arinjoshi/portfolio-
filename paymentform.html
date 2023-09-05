@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stylinglist</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <div class="container">
+<h1>Payment form</h1>
+<hr>
+<h2>User Information</h2>
+Name:<input type="text" required>
+<br>
+<br>
+<fieldset>
+    <legend>Gender</legend>
+    <p>
+        Male<input type="radio" name ="Gender" id="male">Female<input type="radio" name="Gender" id="female">
+
+    </p>
+</fieldset>
+<br>
+Address: <input type="text"><br>
+<br>
+  Email: <input type="Email"><br>
+  <br>
+  pincode:<input typr="number"><br>
+  <hr>
+
+  <h2>Payment Information</h2>
+  <p>
+    Card type:
+    <select name="cardType" id="cardType">
+        <option value="">--select a card type--</option>
+        <option value="Visa"></option>
+        <option value="Mastercard"></option>
+            <option value="RupayCard"></option>
+        </option>
+    </select>
+  </p>
+  <p>
+    card number: <input type="number" name="card number" id="card number">
+
+  </p>
+  <p>
+    Expiry date: <input type="date" name="exp-date" id="exp-date">
+    
+  </p>
+  <p>
+    cvv:<input type="password" name="cvv" id="cvv">
+    
+  </p>
+  <input type="submit">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+body{
+    display:flex;
+    flex-direction:column;
+    justify-items: center;
+    align-items: center;
+    background-image:url("html.jpg") ;
+}
+form{
+    border:1px solid black;
+   
+}
+label{
+    margin:20px;
+}
+input{
+    margin-left:50px;
+}

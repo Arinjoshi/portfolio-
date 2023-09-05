@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{ 
+            display:flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        
+        
+            background-color: bisque;
+            background-image: url("html.jpg");
+            background-size: cover;
+        }
+        #username{
+            color: bisque;
+        }
+    </style>
+    <script >
+        var x=document.getElementById("pwd").value;
+        function verifyPassword(){
+        if(x="") 
+        {
+            alert("cant be empty");;
+            return false;
+        }
+         else   if(x.length<8) 
+        {
+           alert("password must be greater then 8");
+           return false;
+        }
+        else
+        if(x.length>15) 
+        {
+           alert("password nust be less then 15");
+           return false;
+        }
+       else{
+             alert("correct password");
+           }
+        }
+
+
+        var x =document.getElementbyId("email").pattern;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+    </head>
+
+       
+    <form>
+        <label style="color:aqua;" for="email">Email:</label><br>
+        <input type="text" id="email" name="email" pattern ="[a-z0-9._+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"><br>
+        <br><br>
+        <label style="color: aqua;"for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br>
+        <br><br>
+        <div>
+            <input type="submit" onclick="verifyPassword()">
+        </div>
+        <p id="demo"></p>
+      </form>
+</body>
+</html>
